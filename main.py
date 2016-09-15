@@ -23,7 +23,7 @@ class Lemmy (object):
         if self.sort not in ('asc', 'desc'):
             raise UserWarning ("sort must be either 'asc' or 'desc'")
 
-        self._logger = Log (filename = 'main.log')
+        self._logger = Log (filename = './main.log')
         self.log = lambda msg: self._logger.log (msg)
 
         self._table = self.mk_table()
