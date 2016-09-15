@@ -7,3 +7,5 @@ commandline invocation
 
 get usage
     python3 main.py --help
+
+the files data.csv and data.sqlite3 are expected in the same directory as main.py
