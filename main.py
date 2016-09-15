@@ -30,7 +30,7 @@ class Lemmy (object):
         self.table = lambda: self._table
 
     def mk_table (self):
-        def sort_rows (rows):
+        def sort_rows (reader):
             def sorter (row):
                 # we'll assume columns named 'id' are ints
                 if self.sort_col == 'id':
